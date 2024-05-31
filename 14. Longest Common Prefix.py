@@ -10,4 +10,3 @@ class Solution(object):
 
 
 ans = Solution().longestCommonPrefix(["flo", "flightserdtfgyuhijw", "flight"])
-print(ans)
