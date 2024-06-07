@@ -1,16 +1,28 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.next = None
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    def traverse_linked_list(head):
+        current = head
+        while current is not None:
+            current = current.next
+
+
+    def search_linked_list(head, target):
+        current = head
+        while current is not None:
+            if current.data == target:
+                return current.data
+            current = current.next
+
+    head = Node(1)
+    second = Node(2)
+    third = Node(3)
+
+    head.next = second
+    second.next = third
+
+    traverse_linked_list(head)
+    search_linked_list(head,1)
